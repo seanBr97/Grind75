@@ -36,7 +36,7 @@ def isPalindrome(self, s: str) -> bool:
         left_index = 0
         right_index = N-1
 
-        while left_index <= right_index:
+        while left_index < right_index: # <= works as well but not necessary == --> same character anyway, no need to check
             if stripped_str[left_index] != stripped_str[right_index]:
                 return False
             
